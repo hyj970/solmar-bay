@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solmar Bay — Open-World Crime</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; width: 100%; height: 100%;
+    background: #0d1526; overflow: hidden;
+    font-family: "Segoe UI", Verdana, Geneva, sans-serif;
+  }
+  #game { display: block; width: 100vw; height: 100vh; cursor: crosshair; }
+  #fallback {
+    display: none; color: #ffd76a; text-align: center;
+    padding-top: 40vh; font-size: 18px; line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<div id="fallback">Solmar Bay needs JavaScript and a modern desktop browser.<br>Open this page with a static server: <code>node serve.ts</code> then open the address it prints</div>
+<noscript><div style="color:#ffd76a;text-align:center;padding-top:40vh">Solmar Bay needs JavaScript enabled.</div></noscript>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
